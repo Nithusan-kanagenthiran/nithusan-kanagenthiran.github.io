@@ -3,7 +3,7 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  --first-color: #3c16c4;
+  --first-color: #1d9cd3ce;
   --second-color: #0e2431;
   --body-font: "Poppins", sans-serif;
   --big-font-size: 1rem;
@@ -166,8 +166,8 @@ img {
 }
 
 .home_title {
-  font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  font-size: 2rem;
+  margin-bottom: var(--mb-2);
 }
 
 .home_title-color {
@@ -386,6 +386,10 @@ img {
   margin: 0 var(--mb-2);
 }
 
+.footer_icon:hover {
+  font-size: 2.2rem;
+  color: var(--first-color);
+}
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -429,7 +433,10 @@ img {
   .home {
     height: 100vh;
   }
-
+  .home_title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-2);
+  }
   .home_data {
     align-self: flex-end;
   }
@@ -446,12 +453,8 @@ img {
   }
 
   .home_img {
-    width: 460px;
+    width: 160px;
     bottom: 15%;
-  }
-
-  .home_img svg {
-    width: 100%;
   }
 
   .about_container,
@@ -486,11 +489,15 @@ img {
   }
 
   .home_img {
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    background: var(--first-color);
+    margin-top: 5rem;
+    padding: 1rem;
     right: 10%;
-    background: rgba(224, 11, 178, 0.808);
-    animation: animate 10s ease-in-out infinite;
-    transition: all 4s ease-in-out;
     border-radius: 57% 43% 28% 72% / 40% 52% 48% 60%;
+    animation: animate 30s ease-in-out infinite;
   }
 }
 
@@ -507,4 +514,14 @@ img {
   67% {
     border-radius: 57% 43% 28% 72% / 64% 22% 78% 36%;
   }
+}
+
+.blob-image-animation {
+  z-index: 1;
+  width: 300px;
+  height: 500px;
+  background: url(/assets/img/profile.jpg) no-repeat center center/cover;
+  animation: animate 10s ease-in-out infinite;
+  transition: all 9s ease-in-out;
+  border-radius: 57% 43% 28% 72% / 40% 52% 48% 60%;
 }
