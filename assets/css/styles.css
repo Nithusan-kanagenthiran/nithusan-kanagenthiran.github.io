@@ -338,14 +338,16 @@ img {
 }
 
 .project:hover {
-  border: 2px solid var(--first-color);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
 .control_input {
   width: 100%;
   font-size: var(--nomral-font-size);
   font-weight: var(--font-semi);
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 0.5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
@@ -390,6 +392,21 @@ img {
   font-size: 2.2rem;
   color: var(--first-color);
 }
+.contact_detail {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--first-color);
+  padding: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact_detail-icon {
+  align-items: center;
+  font-size: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -458,7 +475,8 @@ img {
   }
 
   .about_container,
-  .skills_container {
+  .skills_container,
+  .contact_container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
@@ -470,14 +488,16 @@ img {
 
   .project_container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
 
   .contact_form {
     width: 400px;
+
+    padding: 1rem;
   }
   .contact_container {
+    height: 400px;
     justify-items: center;
   }
 }
