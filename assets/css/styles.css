@@ -3,7 +3,7 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  --first-color: #f440dc;
+  --first-color: #3c16c4;
   --second-color: #0e2431;
   --body-font: "Poppins", sans-serif;
   --big-font-size: 1rem;
@@ -381,7 +381,7 @@ img {
 }
 
 .footer_icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
   margin: 0 var(--mb-2);
 }
